@@ -1,0 +1,103 @@
+
+    body {
+  background-image:url(Bilder/Bäume.jpg);
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  margin: 0; 
+  padding: 0; 
+}
+
+.maincontainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; 
+  width: 100%;
+  height: 100vh; 
+  margin: 0; 
+  padding: 0; 
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  width: 100%;
+  background-color: gray;
+  margin: 0; 
+  padding: 40px 0; 
+}
+
+span {
+  padding: 30px;
+  background: #2d2f31;
+  color: white;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  cursor: pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide li {
+  padding: 30px;
+}
+
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+#touch:checked + .slide {
+  height: 300px;
+}
+
+.HeaderContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 100%;
+  background-color: rgb(138, 132, 125);
+}
+
+#Header {
+  color:white;
+  
+}
+
+.body2 {
+  background-image:url(Bilder/Untergang.jpg);
+  background-size: auto;
+  font-family: "Open Sans", sans-serif;
+  margin: 0; 
+  padding: 0; 
+}
+
+.BackToHomepage {
+  width: 40px;
+  height: 40px;
+  font-size: xx-large;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  border:none;
+  background-color: #2d2f31;
+  color: white;
+}
